@@ -10,7 +10,9 @@ workflows:
             XCODE_WORKSPACE: "GameAppExpert/Dicoding.xcworkspace"
       scripts:
         - name: Install dependencies
-          script: pod install
+          script: |
+            cd 
+            pod install
         - name: Build debug app
           script: |
             xcodebuild build -workspace "$XCODE_WORKSPACE" \
