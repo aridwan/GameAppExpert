@@ -5,7 +5,9 @@ use_frameworks!
 workspace 'Dicoding'
 
 target 'GameAppExpert' do
-  # Comment the next line if you don't want to use dynamic frameworks
+  pod 'Cosmos', '~> 23.0'
+  pod 'Reusable'
+  pod 'Alamofire'
 end
 
 target 'Favorite' do
@@ -18,6 +20,9 @@ end
 
 target 'Home' do
   project '../Modules/Home/Home'
+  pod 'Cosmos', '~> 23.0'
+  pod 'Reusable'
+  pod 'Alamofire'
 end
 
 target 'Detail' do

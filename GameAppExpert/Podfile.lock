@@ -1,3 +1,28 @@
-PODFILE CHECKSUM: 0ba01c5809773d6b69acbc01a44ca9c5005a513f
+PODS:
+  - Alamofire (5.6.4)
+  - Cosmos (23.0.0)
+  - Reusable (4.1.2):
+    - Reusable/Storyboard (= 4.1.2)
+    - Reusable/View (= 4.1.2)
+  - Reusable/Storyboard (4.1.2)
+  - Reusable/View (4.1.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - Cosmos (~> 23.0)
+  - Reusable
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Cosmos
+    - Reusable
+
+SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
+  Reusable: 6bae6a5e8aa793c9c441db0213c863a64bce9136
+
+PODFILE CHECKSUM: 4e9317eaa5d625cd5bd3b73e9042220a0437eda9
 
 COCOAPODS: 1.12.0
