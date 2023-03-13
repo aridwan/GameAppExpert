@@ -9,8 +9,8 @@ workflows:
             XCODE_SCHEME: "GameAppExpert" # Isikan nama scheme project Anda.
             XCODE_WORKSPACE: "GameAppExpert/Dicoding.xcworkspace"
       scripts:
-       - name: Install dependencies
-        script: pod install
+        - name: Install dependencies
+          script: pod install
         - name: Build debug app
           script: |
             xcodebuild build -workspace "$XCODE_WORKSPACE" \
