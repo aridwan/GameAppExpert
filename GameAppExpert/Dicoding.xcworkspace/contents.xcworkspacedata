@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:GameAppExpert.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Modules/About/About.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Modules/Detail/Detail.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Modules/Favorite/Favorite.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Modules/Home/Home.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

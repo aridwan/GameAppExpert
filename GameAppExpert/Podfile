@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+use_frameworks!
+workspace 'Dicoding'
+
+target 'GameAppExpert' do
+  # Comment the next line if you don't want to use dynamic frameworks
+end
+
+target 'Favorite' do
+  project '../Modules/Favorite/Favorite'
+end
+
+target 'About' do
+  project '../Modules/About/About'
+end
+
+target 'Home' do
+  project '../Modules/Home/Home'
+end
+
+target 'Detail' do
+  project '../Modules/Detail/Detail'
+end
