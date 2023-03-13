@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A10C504F29BF6C9C00DBF076 /* GamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10C504D29BF6C9C00DBF076 /* GamesTableViewCell.swift */; };
+		A10C505029BF6C9C00DBF076 /* GamesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A10C504E29BF6C9C00DBF076 /* GamesTableViewCell.xib */; };
+		A163532829BF1B7900E137CA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A163532629BF1B7900E137CA /* HomeViewController.swift */; };
+		A163532929BF1B7900E137CA /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A163532729BF1B7900E137CA /* HomeViewController.xib */; };
 		A1A86AFA29BF04E300637362 /* Home.docc in Sources */ = {isa = PBXBuildFile; fileRef = A1A86AF929BF04E300637362 /* Home.docc */; };
 		A1A86AFB29BF04E300637362 /* Home.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A86AF829BF04E300637362 /* Home.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F298745688C6FE723A5CD3F4 /* Pods_Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F241BC59CF2A270848FC20 /* Pods_Home.framework */; };
@@ -16,6 +20,13 @@
 		47D4818EC3BEACD67333BA28 /* Pods-Home.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Home.debug.xcconfig"; path = "Target Support Files/Pods-Home/Pods-Home.debug.xcconfig"; sourceTree = "<group>"; };
 		65F241BC59CF2A270848FC20 /* Pods_Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C49237647351009BE3E6826 /* Pods-Home.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Home.release.xcconfig"; path = "Target Support Files/Pods-Home/Pods-Home.release.xcconfig"; sourceTree = "<group>"; };
+		A10C504D29BF6C9C00DBF076 /* GamesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableViewCell.swift; sourceTree = "<group>"; };
+		A10C504E29BF6C9C00DBF076 /* GamesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GamesTableViewCell.xib; sourceTree = "<group>"; };
+		A10C505129BF6FF800DBF076 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10C505229BF6FF800DBF076 /* Cosmos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Cosmos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10C505329BF6FF800DBF076 /* Reusable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Reusable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A163532629BF1B7900E137CA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A163532729BF1B7900E137CA /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		A1A86AF529BF04E300637362 /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A86AF829BF04E300637362 /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
 		A1A86AF929BF04E300637362 /* Home.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Home.docc; sourceTree = "<group>"; };
@@ -36,6 +47,9 @@
 		005E08F072B2CFAE6BACF72C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A10C505129BF6FF800DBF076 /* Alamofire.framework */,
+				A10C505229BF6FF800DBF076 /* Cosmos.framework */,
+				A10C505329BF6FF800DBF076 /* Reusable.framework */,
 				65F241BC59CF2A270848FC20 /* Pods_Home.framework */,
 			);
 			name = Frameworks;
@@ -49,6 +63,24 @@
 			);
 			name = Pods;
 			path = ../../GameAppExpert/Pods;
+			sourceTree = "<group>";
+		};
+		A10C504C29BF6C6E00DBF076 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A163532529BF1B5A00E137CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A163532629BF1B7900E137CA /* HomeViewController.swift */,
+				A163532729BF1B7900E137CA /* HomeViewController.xib */,
+				A10C504D29BF6C9C00DBF076 /* GamesTableViewCell.swift */,
+				A10C504E29BF6C9C00DBF076 /* GamesTableViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		A1A86AEB29BF04E300637362 = {
@@ -72,6 +104,8 @@
 		A1A86AF729BF04E300637362 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A10C504C29BF6C6E00DBF076 /* Presenter */,
+				A163532529BF1B5A00E137CA /* View */,
 				A1A86AF829BF04E300637362 /* Home.h */,
 				A1A86AF929BF04E300637362 /* Home.docc */,
 			);
@@ -148,6 +182,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A163532929BF1B7900E137CA /* HomeViewController.xib in Resources */,
+				A10C505029BF6C9C00DBF076 /* GamesTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +220,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1A86AFA29BF04E300637362 /* Home.docc in Sources */,
+				A10C504F29BF6C9C00DBF076 /* GamesTableViewCell.swift in Sources */,
+				A163532829BF1B7900E137CA /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

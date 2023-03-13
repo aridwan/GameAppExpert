@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		38C8575ABC7BF3A41F4CD769 /* Pods_About.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE55368B9BF30CE47345ED80 /* Pods_About.framework */; };
+		A163533229BF1BC300E137CA /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A163533029BF1BC300E137CA /* AboutViewController.swift */; };
+		A163533329BF1BC300E137CA /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A163533129BF1BC300E137CA /* AboutViewController.xib */; };
+		A163533729BF5C9400E137CA /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A163533629BF5C9400E137CA /* Media.xcassets */; };
 		A1A86B1029BF04F000637362 /* About.docc in Sources */ = {isa = PBXBuildFile; fileRef = A1A86B0F29BF04F000637362 /* About.docc */; };
 		A1A86B1129BF04F000637362 /* About.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A86B0E29BF04F000637362 /* About.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3B91BC2D201098B18ADD330D /* Pods-About.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-About.release.xcconfig"; path = "Target Support Files/Pods-About/Pods-About.release.xcconfig"; sourceTree = "<group>"; };
+		A163533029BF1BC300E137CA /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		A163533129BF1BC300E137CA /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		A163533629BF5C9400E137CA /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		A1A86B0B29BF04F000637362 /* About.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = About.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A86B0E29BF04F000637362 /* About.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = About.h; sourceTree = "<group>"; };
 		A1A86B0F29BF04F000637362 /* About.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = About.docc; sourceTree = "<group>"; };
@@ -41,9 +47,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A163532F29BF1BB500E137CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A163533029BF1BC300E137CA /* AboutViewController.swift */,
+				A163533129BF1BC300E137CA /* AboutViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A1A86B0129BF04F000637362 = {
 			isa = PBXGroup;
 			children = (
+				A163533629BF5C9400E137CA /* Media.xcassets */,
 				A1A86B0D29BF04F000637362 /* About */,
 				A1A86B0C29BF04F000637362 /* Products */,
 				D874794DB1E38E48D863678B /* Pods */,
@@ -62,6 +78,7 @@
 		A1A86B0D29BF04F000637362 /* About */ = {
 			isa = PBXGroup;
 			children = (
+				A163532F29BF1BB500E137CA /* View */,
 				A1A86B0E29BF04F000637362 /* About.h */,
 				A1A86B0F29BF04F000637362 /* About.docc */,
 			);
@@ -148,6 +165,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A163533729BF5C9400E137CA /* Media.xcassets in Resources */,
+				A163533329BF1BC300E137CA /* AboutViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A163533229BF1BC300E137CA /* AboutViewController.swift in Sources */,
 				A1A86B1029BF04F000637362 /* About.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

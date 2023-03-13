@@ -7,23 +7,40 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+public class HomeViewController: UIViewController {
+  
+  @IBOutlet weak var tableView: UITableView!
+  
+  public override func viewDidLoad() {
+    super.viewDidLoad()
+    setNavigationItem()
+    self.registerCell()
+    tableView.reloadData()
+  }
+  
+  private func registerCell() {
+    self.tableView.register(cellType: GamesTableViewCell.self)
+  }
+  
+  private func setNavigationItem() {
+    if #available(iOS 11.0, *) {
+      self.navigationController?.navigationBar.prefersLargeTitles = true
+      self.navigationController?.navigationItem.largeTitleDisplayMode = .always
     }
+    self.title = "Games"
+    self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+  }
+}
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+  public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return 1
+  }
+  
+  public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell: GamesTableViewCell = tableView.dequeueReusableCell(for: indexPath)
+    return cell
+  }
+  
+  
 }

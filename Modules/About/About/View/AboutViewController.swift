@@ -7,23 +7,19 @@
 
 import UIKit
 
-class AboutViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+public class AboutViewController: UIViewController {
+  
+  public override func viewDidLoad() {
+    super.viewDidLoad()
+    setNavigationItem()
+  }
+  
+  private func setNavigationItem() {
+    if #available(iOS 11.0, *) {
+      self.navigationController?.navigationBar.prefersLargeTitles = true
+      self.navigationController?.navigationItem.largeTitleDisplayMode = .always
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    self.title = "About"
+    self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+  }
 }
