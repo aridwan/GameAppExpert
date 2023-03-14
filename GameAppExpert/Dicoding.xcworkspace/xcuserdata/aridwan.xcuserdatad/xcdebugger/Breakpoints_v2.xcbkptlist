@@ -118,54 +118,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2CD05262-4286-4776-95CF-ABB6224E305B"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../Modules/Home/Home/View/GamesTableViewCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "setPlatformIcon(platforms:view:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "2CD05262-4286-4776-95CF-ABB6224E305B - 48c1d5258376df47"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Home.GamesTableViewCell.setPlatformIcon(platforms: Swift.Array&lt;Common.ParentPlatform&gt;, view: __C.UIView) -&gt; ()"
-                  moduleName = "Home"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/aridwan/Desktop/GameApp/Modules/Home/Home/View/GamesTableViewCell.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "54"
-                  endingLineNumber = "54"
-                  offsetFromSymbolStart = "526">
-               </Location>
-               <Location
-                  uuid = "2CD05262-4286-4776-95CF-ABB6224E305B - 48c1d5258376df47"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Home.GamesTableViewCell.setPlatformIcon(platforms: Swift.Array&lt;Common.ParentPlatform&gt;, view: __C.UIView) -&gt; ()"
-                  moduleName = "Home"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/aridwan/Desktop/GameApp/Modules/Home/Home/View/GamesTableViewCell.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "54"
-                  endingLineNumber = "54"
-                  offsetFromSymbolStart = "618">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "488B20B0-A8F7-4FB5-8233-816AFD6F7F5D"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -177,6 +129,100 @@
             endingLineNumber = "77"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3C7310BA-2B93-4EBB-B812-5899703F820A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Modules/Favorite/Favorite/View/FavoriteViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "viewDidAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3C7310BA-2B93-4EBB-B812-5899703F820A - 290fc41a5011539c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Favorite.FavoriteViewController.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "Favorite"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aridwan/Desktop/GameApp/Modules/Favorite/Favorite/View/FavoriteViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "3C7310BA-2B93-4EBB-B812-5899703F820A - 20f22299e955d1bf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in Favorite.FavoriteViewController.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "Favorite"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aridwan/Desktop/GameApp/Modules/Favorite/Favorite/View/FavoriteViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "3C7310BA-2B93-4EBB-B812-5899703F820A - 290fc41a5011539c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Favorite.FavoriteViewController.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "Favorite"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aridwan/Desktop/GameApp/Modules/Favorite/Favorite/View/FavoriteViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "3C7310BA-2B93-4EBB-B812-5899703F820A - 20f22299e955d0f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in Favorite.FavoriteViewController.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "Favorite"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aridwan/Desktop/GameApp/Modules/Favorite/Favorite/View/FavoriteViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "58302395-518C-498B-BB70-2B6E26D9FDAF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Modules/Common/Common/Utils/FavoritesProvider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "persistentContainer"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

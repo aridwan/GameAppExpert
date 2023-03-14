@@ -16,7 +16,7 @@ public final class HomeInjection: NSObject {
     return remote
   }
   
-  func provideDetail(game: Game) -> DetailUseCase {
+  public func provideDetail(game: Game) -> DetailUseCase {
     let repository = provideRepository()
     return DetailInteractor(repository: repository, game: game)
   }

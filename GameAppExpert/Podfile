@@ -45,4 +45,5 @@ end
 
 target 'Common' do
   project '../Modules/Common/Common'
+  pod 'RxSwift'
 end

@@ -10,6 +10,7 @@
 		77D1E58DBBFFA00D8961B910 /* Pods_GameAppExpert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52790607C612E4FBE8FF0254 /* Pods_GameAppExpert.framework */; };
 		A10C508A29C0158800DBF076 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A10C508929C0158800DBF076 /* Common.framework */; };
 		A10C508B29C0158800DBF076 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A10C508929C0158800DBF076 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1339F8A29C0CEA700A9A51B /* Favorites.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1339F8829C0CEA700A9A51B /* Favorites.xcdatamodeld */; };
 		A163532429BF162200E137CA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A163532329BF162200E137CA /* TabBarController.swift */; };
 		A163533929BF5DA000E137CA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A163533829BF5DA000E137CA /* Constants.swift */; };
 		A163533F29BF604900E137CA /* About.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A163531629BF112200E137CA /* About.framework */; };
@@ -52,6 +53,7 @@
 		A10C505C29BF703800DBF076 /* Cosmos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Cosmos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10C505D29BF703800DBF076 /* Reusable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Reusable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10C508929C0158800DBF076 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1339F8929C0CEA700A9A51B /* Favorites.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Favorites.xcdatamodel; sourceTree = "<group>"; };
 		A163531629BF112200E137CA /* About.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = About.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A163531729BF112200E137CA /* Detail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Detail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A163531829BF112200E137CA /* Favorite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Favorite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +106,7 @@
 		A1A86A9F29BEF67000637362 = {
 			isa = PBXGroup;
 			children = (
+				A1339F8829C0CEA700A9A51B /* Favorites.xcdatamodeld */,
 				A1A86AAA29BEF67000637362 /* GameAppExpert */,
 				A1A86AA929BEF67000637362 /* Products */,
 				E4F0D6D4E0B1F8EBF1BC5B0E /* Pods */,
@@ -279,6 +282,7 @@
 				A1B2FFD229C021A9009C66A0 /* Injection.swift in Sources */,
 				A163532429BF162200E137CA /* TabBarController.swift in Sources */,
 				A1A86AAC29BEF67000637362 /* AppDelegate.swift in Sources */,
+				A1339F8A29C0CEA700A9A51B /* Favorites.xcdatamodeld in Sources */,
 				A1A86AAE29BEF67000637362 /* SceneDelegate.swift in Sources */,
 				A163533929BF5DA000E137CA /* Constants.swift in Sources */,
 			);
@@ -488,6 +492,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A1339F8829C0CEA700A9A51B /* Favorites.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A1339F8929C0CEA700A9A51B /* Favorites.xcdatamodel */,
+			);
+			currentVersion = A1339F8929C0CEA700A9A51B /* Favorites.xcdatamodel */;
+			path = Favorites.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A1A86AA029BEF67000637362 /* Project object */;
 }

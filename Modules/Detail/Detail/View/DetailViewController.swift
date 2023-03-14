@@ -44,16 +44,16 @@ public class DetailViewController: UIViewController {
       } else {
         self.loadBigImage(urlString: presenterGame.backgroundImage ?? "", imageView: self.gameImageView)
       }
-//      self.presenter?.checkFavorites(id: presenterGame.id ?? 0, completion: { game in
-//        DispatchQueue.main.async {
-//          if game != nil {
-//            self.fillHeart()
-//          } else {
-//            self.emptyHeart()
-//          }
-//          self.setNavigationItem()
-//        }
-//      })
+      self.presenter?.checkFavorites(id: presenterGame.id ?? 0, completion: { game in
+        DispatchQueue.main.async {
+          if game != nil {
+            self.fillHeart()
+          } else {
+            self.emptyHeart()
+          }
+          self.setNavigationItem()
+        }
+      })
       
     })
   }
@@ -73,22 +73,22 @@ public class DetailViewController: UIViewController {
     }
     navigationItem.rightBarButtonItem = barButton
     navigationItem.rightBarButtonItem?.tintColor = UIColor.white
-//    guard let presenterGame = self.presenter?.game, let imageString = self.presenter?.game?.backgroundImage, let imageUrl = URL(string: imageString), let bigImage = UIImage(url: imageUrl), let data = bigImage.pngData() else {return}
-//    barButton.rx.tap.subscribe(onNext: {
-//      if self.isLiked == false {
-//        self.presenter?.setFavorites(game: presenterGame, image: data, completion: { result in
-//          if result == true {
-//            self.fillHeart()
-//          }
-//        })
-//      } else {
-//        self.presenter?.removeFavorites(game: presenterGame, completion: {result in
-//          if result == true {
-//            self.emptyHeart()
-//          }
-//        })
-//      }
-//    }).disposed(by: disposeBag)
+    guard let presenterGame = self.presenter?.game, let imageString = self.presenter?.game?.backgroundImage, let imageUrl = URL(string: imageString), let bigImage = UIImage(url: imageUrl), let data = bigImage.pngData() else {return}
+    barButton.rx.tap.subscribe(onNext: {
+      if self.isLiked == false {
+        self.presenter?.setFavorites(game: presenterGame, image: data, completion: { result in
+          if result == true {
+            self.fillHeart()
+          }
+        })
+      } else {
+        self.presenter?.removeFavorites(game: presenterGame, completion: {result in
+          if result == true {
+            self.emptyHeart()
+          }
+        })
+      }
+    }).disposed(by: disposeBag)
     
   }
   

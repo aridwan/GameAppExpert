@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavoriteViewController" customModule="Favorite" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="qd4-Yj-e1P" id="yBF-qz-HLb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,9 +17,49 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your favorites still empty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAb-p3-mjR">
+                    <rect key="frame" x="66.666666666666686" y="493" width="260" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="260" id="YSs-Pv-Vcs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                    <color key="textColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exclamationmark.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Oa1-RU-Ji5">
+                    <rect key="frame" x="136" y="368" width="121" height="116.66666666666669"/>
+                    <color key="tintColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="121" id="Icr-Mg-8sp"/>
+                        <constraint firstAttribute="height" constant="118" id="pZR-M3-w7N"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qd4-Yj-e1P">
+                    <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="JxH-Za-dAV"/>
+                        <outlet property="delegate" destination="-1" id="KJ1-S5-GyV"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <point key="canvasLocation" x="127" y="20"/>
+            <constraints>
+                <constraint firstItem="ZAb-p3-mjR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0g0-JL-10h"/>
+                <constraint firstItem="qd4-Yj-e1P" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="4Ge-31-HdF"/>
+                <constraint firstItem="qd4-Yj-e1P" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="8xA-0L-oo6"/>
+                <constraint firstItem="ZAb-p3-mjR" firstAttribute="top" secondItem="Oa1-RU-Ji5" secondAttribute="bottom" constant="8" symbolic="YES" id="ReM-YX-KQ7"/>
+                <constraint firstItem="qd4-Yj-e1P" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bJE-Gk-3I3"/>
+                <constraint firstAttribute="bottom" secondItem="qd4-Yj-e1P" secondAttribute="bottom" id="whz-6H-8We"/>
+                <constraint firstItem="Oa1-RU-Ji5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yD8-xC-i3C"/>
+                <constraint firstItem="Oa1-RU-Ji5" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ypT-hO-hgn"/>
+            </constraints>
+            <point key="canvasLocation" x="125.95419847328243" y="19.718309859154932"/>
         </view>
     </objects>
+    <resources>
+        <image name="exclamationmark.circle" catalog="system" width="128" height="123"/>
+    </resources>
 </document>

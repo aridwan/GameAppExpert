@@ -9,6 +9,7 @@ import Foundation
 import Home
 import Detail
 import About
+import Favorite
 
 final class Injection: NSObject {
  
@@ -21,7 +22,12 @@ final class Injection: NSObject {
     let repository = provideRepository()
     return HomeInteractor(repository: repository)
   }
- 
+  
+  func provideFavorite() -> FavoriteUseCase {
+    let repository = FavoritesRepository()
+    return FavoriteInteractor(repository: repository)
+  }
+  
 //  func provideDetail(game: Game) -> DetailUseCase {
 //    let repository = provideRepository()
 //    return DetailInteractor(repository: repository, game: game)

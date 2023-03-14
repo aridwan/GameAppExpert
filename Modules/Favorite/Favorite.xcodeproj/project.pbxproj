@@ -8,14 +8,41 @@
 
 /* Begin PBXBuildFile section */
 		8E4BDEA9AC18B8497A8726EC /* Pods_Favorite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61086D70FA702F56B0761FCA /* Pods_Favorite.framework */; };
+		A1339F7829C0C19D00A9A51B /* FavoritePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1339F7729C0C19D00A9A51B /* FavoritePresenter.swift */; };
+		A1339F7B29C0C1CD00A9A51B /* FavoriteInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1339F7A29C0C1CD00A9A51B /* FavoriteInteractor.swift */; };
+		A1339F7E29C0C2A000A9A51B /* FavoriteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1339F7D29C0C2A000A9A51B /* FavoriteRepository.swift */; };
+		A1339F8229C0C79D00A9A51B /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1339F8129C0C79D00A9A51B /* Common.framework */; };
+		A1339F8329C0C79D00A9A51B /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1339F8129C0C79D00A9A51B /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1339F8629C0C88700A9A51B /* Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1339F8529C0C88700A9A51B /* Home.framework */; };
+		A1339F8729C0C88700A9A51B /* Home.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1339F8529C0C88700A9A51B /* Home.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A163532D29BF1B9900E137CA /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A163532B29BF1B9900E137CA /* FavoriteViewController.swift */; };
 		A163532E29BF1B9900E137CA /* FavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A163532C29BF1B9900E137CA /* FavoriteViewController.xib */; };
 		A1A86ACE29BEFF6800637362 /* Favorite.docc in Sources */ = {isa = PBXBuildFile; fileRef = A1A86ACD29BEFF6800637362 /* Favorite.docc */; };
 		A1A86ACF29BEFF6800637362 /* Favorite.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A86ACC29BEFF6800637362 /* Favorite.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A1339F8429C0C79E00A9A51B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A1339F8329C0C79D00A9A51B /* Common.framework in Embed Frameworks */,
+				A1339F8729C0C88700A9A51B /* Home.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		61086D70FA702F56B0761FCA /* Pods_Favorite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Favorite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1339F7729C0C19D00A9A51B /* FavoritePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePresenter.swift; sourceTree = "<group>"; };
+		A1339F7A29C0C1CD00A9A51B /* FavoriteInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteInteractor.swift; sourceTree = "<group>"; };
+		A1339F7D29C0C2A000A9A51B /* FavoriteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRepository.swift; sourceTree = "<group>"; };
+		A1339F8129C0C79D00A9A51B /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1339F8529C0C88700A9A51B /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A163532B29BF1B9900E137CA /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		A163532C29BF1B9900E137CA /* FavoriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteViewController.xib; sourceTree = "<group>"; };
 		A1A86AC929BEFF6800637362 /* Favorite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Favorite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,6 +58,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E4BDEA9AC18B8497A8726EC /* Pods_Favorite.framework in Frameworks */,
+				A1339F8229C0C79D00A9A51B /* Common.framework in Frameworks */,
+				A1339F8629C0C88700A9A51B /* Home.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,9 +69,35 @@
 		364B5C32376EF6C5E34588BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A1339F8529C0C88700A9A51B /* Home.framework */,
+				A1339F8129C0C79D00A9A51B /* Common.framework */,
 				61086D70FA702F56B0761FCA /* Pods_Favorite.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1339F7629C0BED100A9A51B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A1339F7729C0C19D00A9A51B /* FavoritePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A1339F7929C0C1B900A9A51B /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				A1339F7A29C0C1CD00A9A51B /* FavoriteInteractor.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		A1339F7C29C0C29200A9A51B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A1339F7D29C0C2A000A9A51B /* FavoriteRepository.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		A163532A29BF1B8700E137CA /* View */ = {
@@ -75,6 +130,9 @@
 		A1A86ACB29BEFF6800637362 /* Favorite */ = {
 			isa = PBXGroup;
 			children = (
+				A1339F7C29C0C29200A9A51B /* Data */,
+				A1339F7929C0C1B900A9A51B /* UseCase */,
+				A1339F7629C0BED100A9A51B /* Presenter */,
 				A163532A29BF1B8700E137CA /* View */,
 				A1A86ACC29BEFF6800637362 /* Favorite.h */,
 				A1A86ACD29BEFF6800637362 /* Favorite.docc */,
@@ -115,6 +173,7 @@
 				A1A86AC529BEFF6800637362 /* Sources */,
 				A1A86AC629BEFF6800637362 /* Frameworks */,
 				A1A86AC729BEFF6800637362 /* Resources */,
+				A1339F8429C0C79E00A9A51B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -198,6 +257,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1339F7829C0C19D00A9A51B /* FavoritePresenter.swift in Sources */,
+				A1339F7B29C0C1CD00A9A51B /* FavoriteInteractor.swift in Sources */,
+				A1339F7E29C0C2A000A9A51B /* FavoriteRepository.swift in Sources */,
 				A163532D29BF1B9900E137CA /* FavoriteViewController.swift in Sources */,
 				A1A86ACE29BEFF6800637362 /* Favorite.docc in Sources */,
 			);

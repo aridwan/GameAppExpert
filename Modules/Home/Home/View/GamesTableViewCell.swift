@@ -10,7 +10,7 @@ import Cosmos
 import Reusable
 import Common
 
-class GamesTableViewCell: UITableViewCell, NibReusable {
+public class GamesTableViewCell: UITableViewCell, NibReusable {
   
   @IBOutlet weak var listImage: UIImageView!
   @IBOutlet weak var cosmos: CosmosView!
@@ -19,7 +19,7 @@ class GamesTableViewCell: UITableViewCell, NibReusable {
   @IBOutlet weak var platformView: UIView!
   @IBOutlet weak var releaseDateLabel: UILabel!
   
-  var game: Game? {
+  public var game: Game? {
     didSet {
       self.removeAllSubviews(view: platformView)
       self.listTitle.text = self.game?.name
@@ -33,7 +33,7 @@ class GamesTableViewCell: UITableViewCell, NibReusable {
     }
   }
   
-  override func awakeFromNib() {
+  public override func awakeFromNib() {
     super.awakeFromNib()
     self.activityIndicator.startAnimating()
     self.cosmos.settings.fillMode = .precise
