@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "modularization-error-package",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/aridwan/Modularization-Error-Package",
+      "state" : {
+        "revision" : "b97934be0f068a6c6045bb66dc1106048b1d5e15",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}

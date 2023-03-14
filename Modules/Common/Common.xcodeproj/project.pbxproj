@@ -12,9 +12,9 @@
 		A10C508329C0154D00DBF076 /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = A10C508029C0154D00DBF076 /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A10C508E29C015AD00DBF076 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10C508D29C015AD00DBF076 /* Constants.swift */; };
 		A10C509029C015EB00DBF076 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10C508F29C015EB00DBF076 /* Endpoints.swift */; };
-		A10C509829C01A5500DBF076 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10C509729C01A5500DBF076 /* CustomError.swift */; };
 		A10C509A29C01DEB00DBF076 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10C509929C01DEB00DBF076 /* ImageDownloader.swift */; };
 		A1339F8029C0C6CA00A9A51B /* FavoritesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1339F7F29C0C6CA00A9A51B /* FavoritesProvider.swift */; };
+		A1339F8D29C0E23000A9A51B /* ErrorPackage in Frameworks */ = {isa = PBXBuildFile; productRef = A1339F8C29C0E23000A9A51B /* ErrorPackage */; };
 		A1B2FFF329C0325E009C66A0 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2FFF129C0325E009C66A0 /* Game.swift */; };
 		A1B2FFF429C0325E009C66A0 /* DetailGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2FFF229C0325E009C66A0 /* DetailGame.swift */; };
 /* End PBXBuildFile section */
@@ -27,7 +27,6 @@
 		A10C508129C0154D00DBF076 /* Common.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Common.docc; sourceTree = "<group>"; };
 		A10C508D29C015AD00DBF076 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A10C508F29C015EB00DBF076 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
-		A10C509729C01A5500DBF076 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		A10C509929C01DEB00DBF076 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		A1339F7F29C0C6CA00A9A51B /* FavoritesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesProvider.swift; sourceTree = "<group>"; };
 		A1B2FFF129C0325E009C66A0 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
@@ -40,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1339F8D29C0E23000A9A51B /* ErrorPackage in Frameworks */,
 				661CF751D3D6F37AF9843341 /* Pods_Common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,7 +99,6 @@
 			children = (
 				A10C508D29C015AD00DBF076 /* Constants.swift */,
 				A10C508F29C015EB00DBF076 /* Endpoints.swift */,
-				A10C509729C01A5500DBF076 /* CustomError.swift */,
 				A10C509929C01DEB00DBF076 /* ImageDownloader.swift */,
 				A1339F7F29C0C6CA00A9A51B /* FavoritesProvider.swift */,
 			);
@@ -144,6 +143,9 @@
 			dependencies = (
 			);
 			name = Common;
+			packageProductDependencies = (
+				A1339F8C29C0E23000A9A51B /* ErrorPackage */,
+			);
 			productName = Common;
 			productReference = A10C507D29C0154D00DBF076 /* Common.framework */;
 			productType = "com.apple.product-type.framework";
@@ -171,6 +173,9 @@
 				Base,
 			);
 			mainGroup = A10C507329C0154D00DBF076;
+			packageReferences = (
+				A1339F8B29C0E23000A9A51B /* XCRemoteSwiftPackageReference "Modularization-Error-Package" */,
+			);
 			productRefGroup = A10C507E29C0154D00DBF076 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -225,7 +230,6 @@
 				A1B2FFF329C0325E009C66A0 /* Game.swift in Sources */,
 				A1B2FFF429C0325E009C66A0 /* DetailGame.swift in Sources */,
 				A10C509A29C01DEB00DBF076 /* ImageDownloader.swift in Sources */,
-				A10C509829C01A5500DBF076 /* CustomError.swift in Sources */,
 				A10C509029C015EB00DBF076 /* Endpoints.swift in Sources */,
 				A10C508E29C015AD00DBF076 /* Constants.swift in Sources */,
 			);
@@ -432,6 +436,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A1339F8B29C0E23000A9A51B /* XCRemoteSwiftPackageReference "Modularization-Error-Package" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aridwan/Modularization-Error-Package";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A1339F8C29C0E23000A9A51B /* ErrorPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1339F8B29C0E23000A9A51B /* XCRemoteSwiftPackageReference "Modularization-Error-Package" */;
+			productName = ErrorPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A10C507429C0154D00DBF076 /* Project object */;
 }

@@ -9,6 +9,7 @@ import Foundation
 import RxSwift
 import Alamofire
 import Common
+import ErrorPackage
 
 public protocol GameRepositoryProtocol {
   func getGames() -> Observable<[Game]>
