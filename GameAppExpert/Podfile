@@ -14,6 +14,11 @@ end
 
 target 'Favorite' do
   project '../Modules/Favorite/Favorite'
+  pod 'Cosmos', '~> 23.0'
+  pod 'Reusable'
+  pod 'Alamofire'
+  pod 'RxSwift'
+  pod 'RxCocoa'
 end
 
 target 'About' do
@@ -31,6 +36,11 @@ end
 
 target 'Detail' do
   project '../Modules/Detail/Detail'
+  pod 'Cosmos', '~> 23.0'
+  pod 'Reusable'
+  pod 'Alamofire'
+  pod 'RxSwift'
+  pod 'RxCocoa'
 end
 
 target 'Common' do

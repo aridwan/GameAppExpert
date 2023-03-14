@@ -14,6 +14,8 @@
 		A10C509029C015EB00DBF076 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10C508F29C015EB00DBF076 /* Endpoints.swift */; };
 		A10C509829C01A5500DBF076 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10C509729C01A5500DBF076 /* CustomError.swift */; };
 		A10C509A29C01DEB00DBF076 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10C509929C01DEB00DBF076 /* ImageDownloader.swift */; };
+		A1B2FFF329C0325E009C66A0 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2FFF129C0325E009C66A0 /* Game.swift */; };
+		A1B2FFF429C0325E009C66A0 /* DetailGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2FFF229C0325E009C66A0 /* DetailGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		A10C508F29C015EB00DBF076 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		A10C509729C01A5500DBF076 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		A10C509929C01DEB00DBF076 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		A1B2FFF129C0325E009C66A0 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		A1B2FFF229C0325E009C66A0 /* DetailGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailGame.swift; sourceTree = "<group>"; };
 		CB7A063A4823D1E815F5142B /* Pods-Common.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Common.release.xcconfig"; path = "Target Support Files/Pods-Common/Pods-Common.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +84,9 @@
 		A10C507F29C0154D00DBF076 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A1B2FFF229C0325E009C66A0 /* DetailGame.swift */,
+				A1B2FFF129C0325E009C66A0 /* Game.swift */,
+				A1B2FFEC29C03181009C66A0 /* Model */,
 				A10C508C29C0159000DBF076 /* Utils */,
 				A10C508029C0154D00DBF076 /* Common.h */,
 				A10C508129C0154D00DBF076 /* Common.docc */,
@@ -96,6 +103,13 @@
 				A10C509929C01DEB00DBF076 /* ImageDownloader.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		A1B2FFEC29C03181009C66A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +218,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A10C508229C0154D00DBF076 /* Common.docc in Sources */,
+				A1B2FFF329C0325E009C66A0 /* Game.swift in Sources */,
+				A1B2FFF429C0325E009C66A0 /* DetailGame.swift in Sources */,
 				A10C509A29C01DEB00DBF076 /* ImageDownloader.swift in Sources */,
 				A10C509829C01A5500DBF076 /* CustomError.swift in Sources */,
 				A10C509029C015EB00DBF076 /* Endpoints.swift in Sources */,

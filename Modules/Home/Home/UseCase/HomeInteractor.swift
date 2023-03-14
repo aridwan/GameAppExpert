@@ -7,6 +7,7 @@
 
 import Foundation
 import RxSwift
+import Common
 
 public protocol HomeUseCase {
   func getGames() -> Observable<[Game]>

@@ -125,42 +125,58 @@
             filePath = "../Modules/Home/Home/View/GamesTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "setPlatformIcon(platforms:view:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "2CD05262-4286-4776-95CF-ABB6224E305B - 8b68dd2fa62ef045"
+                  uuid = "2CD05262-4286-4776-95CF-ABB6224E305B - 48c1d5258376df47"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Home.GamesTableViewCell.setPlatformIcon(platforms: Swift.Array&lt;Home.ParentPlatform&gt;, view: __C.UIView) -&gt; ()"
+                  symbolName = "Home.GamesTableViewCell.setPlatformIcon(platforms: Swift.Array&lt;Common.ParentPlatform&gt;, view: __C.UIView) -&gt; ()"
                   moduleName = "Home"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/aridwan/Desktop/GameApp/Modules/Home/Home/View/GamesTableViewCell.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
                   offsetFromSymbolStart = "526">
                </Location>
                <Location
-                  uuid = "2CD05262-4286-4776-95CF-ABB6224E305B - 8b68dd2fa62ef045"
+                  uuid = "2CD05262-4286-4776-95CF-ABB6224E305B - 48c1d5258376df47"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Home.GamesTableViewCell.setPlatformIcon(platforms: Swift.Array&lt;Home.ParentPlatform&gt;, view: __C.UIView) -&gt; ()"
+                  symbolName = "Home.GamesTableViewCell.setPlatformIcon(platforms: Swift.Array&lt;Common.ParentPlatform&gt;, view: __C.UIView) -&gt; ()"
                   moduleName = "Home"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/aridwan/Desktop/GameApp/Modules/Home/Home/View/GamesTableViewCell.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
                   offsetFromSymbolStart = "618">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "488B20B0-A8F7-4FB5-8233-816AFD6F7F5D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Modules/Home/Home/View/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -17,7 +17,7 @@ public struct ListGame: Decodable {
   var count: Int?
   var next: String?
   var previous: JSONNull?
-  var results: [Game]?
+  public var results: [Game]?
   var seoTitle, seoDescription, seoKeywords, seoH1: String?
   var description: String?
   
@@ -33,19 +33,19 @@ public struct ListGame: Decodable {
 
 // MARK: - Result
 public class Game: Decodable {
-  var id: Int?
-  var slug, name, released: String?
-  var backgroundImage: String?
-  var rating: Double?
-  var added: Int?
-  var reviewsCount: Int?
-  var parentPlatforms: [ParentPlatform]?
-  var esrbRating: EsrbRating?
-  var shortScreenshots: [ShortScreenshot]?
-  var descriptionRaw: String?
-  var state: DownloadState = .new
-  var savedImage: Data?
-  var image: UIImage?
+  public var id: Int?
+  public var slug, name, released: String?
+  public var backgroundImage: String?
+  public var rating: Double?
+  public var added: Int?
+  public var reviewsCount: Int?
+  public var parentPlatforms: [ParentPlatform]?
+  public var esrbRating: EsrbRating?
+  public var shortScreenshots: [ShortScreenshot]?
+  public var descriptionRaw: String?
+  public var state: DownloadState = .new
+  public var savedImage: Data?
+  public var image: UIImage?
   
   init(id: Int, name: String, releasedDate: String, rating: Double, added: Int, esrbRating: String, descriptionRaw: String, backgroundImage: String, savedImage: Data) {
     self.id = id
@@ -77,9 +77,9 @@ public enum Color: String, Codable {
 
 // MARK: - EsrbRating
 public struct EsrbRating: Codable {
-  var id: Int?
-  var name: Name?
-  var slug: Slug?
+  public var id: Int?
+  public var name: Name?
+  public var slug: Slug?
 }
 
 public enum Name: String, Codable {
@@ -118,13 +118,13 @@ public enum Slug: String, Codable {
 
 // MARK: - ParentPlatform
 public struct ParentPlatform: Codable {
-  var platform: EsrbRating?
+  public var platform: EsrbRating?
 }
 
 // MARK: - ShortScreenshot
 public struct ShortScreenshot: Codable {
-  var id: Int?
-  var image: String?
+  public var id: Int?
+  public var image: String?
 }
 
 // MARK: - Encode/decode helpers

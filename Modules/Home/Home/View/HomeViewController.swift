@@ -73,5 +73,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     return cell
   }
   
+  public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    guard let game = self.presenter?.games[indexPath.row] else { return }
+    self.presenter?.goToDetail(with: game, navigationController: self.navigationController ?? UINavigationController())
+  }
   
 }

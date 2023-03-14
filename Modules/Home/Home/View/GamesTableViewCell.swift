@@ -8,6 +8,7 @@
 import UIKit
 import Cosmos
 import Reusable
+import Common
 
 class GamesTableViewCell: UITableViewCell, NibReusable {
   

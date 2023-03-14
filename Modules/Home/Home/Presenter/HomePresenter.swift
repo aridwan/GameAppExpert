@@ -7,6 +7,8 @@
 
 import Foundation
 import RxSwift
+import Detail
+import Common
 
 public class HomePresenter {
  
@@ -33,5 +35,15 @@ public class HomePresenter {
         self.loadingState = false
         completion()
       }.disposed(by: disposeBag)
+  }
+  
+  func goToDetail(with game: Game, navigationController: UINavigationController) {
+    guard let bundle = Bundle(identifier: "com.dicoding.academy.Detail") else {return}
+    let viewController = DetailViewController(nibName: "DetailViewController", bundle: bundle)
+    let detailUseCase = HomeInjection.init().provideDetail(game: game)
+    let presenter = DetailPresenter(detailUseCase: detailUseCase)
+    presenter.game = game
+    viewController.presenter = presenter
+    navigationController.pushViewController(viewController, animated: true)
   }
 }
