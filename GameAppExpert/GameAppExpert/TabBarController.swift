@@ -32,12 +32,12 @@ public class TabBarController: UITabBarController {
     let favoritesVC = FavoriteViewController(nibName: "FavoriteViewController", bundle: favoritesBundle)
     let aboutVC = AboutViewController(nibName: "AboutViewController", bundle: aboutBundle)
     
-//    let homeUseCase = Injection.init().provideHome()
-//    let presenter = HomePresenter.init(homeUseCase: homeUseCase)
+    let homeUseCase = Injection.init().provideHome()
+    let presenter = HomePresenter.init(homeUseCase: homeUseCase)
 //    let favoritesPresenter = HomePresenter.init(homeUseCase: homeUseCase)
     
 //    favoritesVC.presenter = favoritesPresenter
-//    listVC.presenter = presenter
+    homeVC.presenter = presenter
         viewControllers = [
             createNavController(for: homeVC, title: NSLocalizedString("Games", comment: ""), image: gamesImage),
             createNavController(for: favoritesVC, title: NSLocalizedString("Favorites", comment: ""), image: favoritesImage),

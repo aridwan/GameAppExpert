@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		77D1E58DBBFFA00D8961B910 /* Pods_GameAppExpert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52790607C612E4FBE8FF0254 /* Pods_GameAppExpert.framework */; };
+		A10C508A29C0158800DBF076 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A10C508929C0158800DBF076 /* Common.framework */; };
+		A10C508B29C0158800DBF076 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A10C508929C0158800DBF076 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A163532429BF162200E137CA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A163532329BF162200E137CA /* TabBarController.swift */; };
 		A163533929BF5DA000E137CA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A163533829BF5DA000E137CA /* Constants.swift */; };
 		A163533F29BF604900E137CA /* About.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A163531629BF112200E137CA /* About.framework */; };
@@ -22,6 +24,7 @@
 		A1A86AAE29BEF67000637362 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A86AAD29BEF67000637362 /* SceneDelegate.swift */; };
 		A1A86AB529BEF67300637362 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1A86AB429BEF67300637362 /* Assets.xcassets */; };
 		A1A86AB829BEF67300637362 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1A86AB629BEF67300637362 /* LaunchScreen.storyboard */; };
+		A1B2FFD229C021A9009C66A0 /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2FFD129C021A9009C66A0 /* Injection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +36,7 @@
 			files = (
 				A163534529BF604D00E137CA /* Favorite.framework in Embed Frameworks */,
 				A163534029BF604900E137CA /* About.framework in Embed Frameworks */,
+				A10C508B29C0158800DBF076 /* Common.framework in Embed Frameworks */,
 				A163534329BF604B00E137CA /* Detail.framework in Embed Frameworks */,
 				A163534729BF604F00E137CA /* Home.framework in Embed Frameworks */,
 			);
@@ -47,6 +51,7 @@
 		A10C505B29BF703800DBF076 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10C505C29BF703800DBF076 /* Cosmos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Cosmos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10C505D29BF703800DBF076 /* Reusable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Reusable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10C508929C0158800DBF076 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A163531629BF112200E137CA /* About.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = About.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A163531729BF112200E137CA /* Detail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Detail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A163531829BF112200E137CA /* Favorite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Favorite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +64,7 @@
 		A1A86AB429BEF67300637362 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1A86AB729BEF67300637362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1A86AB929BEF67300637362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1B2FFD129C021A9009C66A0 /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
 		D4FEB64CD98F3A976AAE3372 /* Pods-GameAppExpert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameAppExpert.debug.xcconfig"; path = "Target Support Files/Pods-GameAppExpert/Pods-GameAppExpert.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +76,7 @@
 				77D1E58DBBFFA00D8961B910 /* Pods_GameAppExpert.framework in Frameworks */,
 				A163534429BF604D00E137CA /* Favorite.framework in Frameworks */,
 				A163534229BF604B00E137CA /* Detail.framework in Frameworks */,
+				A10C508A29C0158800DBF076 /* Common.framework in Frameworks */,
 				A163534629BF604E00E137CA /* Home.framework in Frameworks */,
 				A163533F29BF604900E137CA /* About.framework in Frameworks */,
 			);
@@ -81,6 +88,7 @@
 		4DBE3DFBA798523B35055AB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A10C508929C0158800DBF076 /* Common.framework */,
 				A10C505B29BF703800DBF076 /* Alamofire.framework */,
 				A10C505C29BF703800DBF076 /* Cosmos.framework */,
 				A10C505D29BF703800DBF076 /* Reusable.framework */,
@@ -121,6 +129,7 @@
 				A1A86AB929BEF67300637362 /* Info.plist */,
 				A163532329BF162200E137CA /* TabBarController.swift */,
 				A163533829BF5DA000E137CA /* Constants.swift */,
+				A1B2FFD129C021A9009C66A0 /* Injection.swift */,
 			);
 			path = GameAppExpert;
 			sourceTree = "<group>";
@@ -267,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1B2FFD229C021A9009C66A0 /* Injection.swift in Sources */,
 				A163532429BF162200E137CA /* TabBarController.swift in Sources */,
 				A1A86AAC29BEF67000637362 /* AppDelegate.swift in Sources */,
 				A1A86AAE29BEF67000637362 /* SceneDelegate.swift in Sources */,

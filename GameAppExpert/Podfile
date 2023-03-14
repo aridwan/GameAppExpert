@@ -8,6 +8,8 @@ target 'GameAppExpert' do
   pod 'Cosmos', '~> 23.0'
   pod 'Reusable'
   pod 'Alamofire'
+  pod 'RxSwift'
+  pod 'RxCocoa'
 end
 
 target 'Favorite' do
@@ -23,8 +25,14 @@ target 'Home' do
   pod 'Cosmos', '~> 23.0'
   pod 'Reusable'
   pod 'Alamofire'
+  pod 'RxSwift'
+  pod 'RxCocoa'
 end
 
 target 'Detail' do
   project '../Modules/Detail/Detail'
+end
+
+target 'Common' do
+  project '../Modules/Common/Common'
 end

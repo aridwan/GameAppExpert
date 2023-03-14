@@ -9,12 +9,33 @@
 /* Begin PBXBuildFile section */
 		A10C504F29BF6C9C00DBF076 /* GamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10C504D29BF6C9C00DBF076 /* GamesTableViewCell.swift */; };
 		A10C505029BF6C9C00DBF076 /* GamesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A10C504E29BF6C9C00DBF076 /* GamesTableViewCell.xib */; };
+		A10C506629C000A200DBF076 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10C506529C000A200DBF076 /* Game.swift */; };
+		A10C506B29C008C500DBF076 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10C506A29C008C500DBF076 /* HomePresenter.swift */; };
+		A10C506F29C00C5300DBF076 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10C506E29C00C5300DBF076 /* HomeInteractor.swift */; };
+		A10C507229C00D4C00DBF076 /* GameRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10C507129C00D4C00DBF076 /* GameRepository.swift */; };
+		A10C509229C019B300DBF076 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A10C509129C019B300DBF076 /* Common.framework */; };
+		A10C509329C019B300DBF076 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A10C509129C019B300DBF076 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A163532829BF1B7900E137CA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A163532629BF1B7900E137CA /* HomeViewController.swift */; };
 		A163532929BF1B7900E137CA /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A163532729BF1B7900E137CA /* HomeViewController.xib */; };
 		A1A86AFA29BF04E300637362 /* Home.docc in Sources */ = {isa = PBXBuildFile; fileRef = A1A86AF929BF04E300637362 /* Home.docc */; };
 		A1A86AFB29BF04E300637362 /* Home.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A86AF829BF04E300637362 /* Home.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1B2FFD429C02399009C66A0 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B2FFD329C02399009C66A0 /* Media.xcassets */; };
 		F298745688C6FE723A5CD3F4 /* Pods_Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F241BC59CF2A270848FC20 /* Pods_Home.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A10C509429C019B300DBF076 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A10C509329C019B300DBF076 /* Common.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		47D4818EC3BEACD67333BA28 /* Pods-Home.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Home.debug.xcconfig"; path = "Target Support Files/Pods-Home/Pods-Home.debug.xcconfig"; sourceTree = "<group>"; };
@@ -25,11 +46,17 @@
 		A10C505129BF6FF800DBF076 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10C505229BF6FF800DBF076 /* Cosmos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Cosmos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10C505329BF6FF800DBF076 /* Reusable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Reusable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10C506529C000A200DBF076 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		A10C506A29C008C500DBF076 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		A10C506E29C00C5300DBF076 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		A10C507129C00D4C00DBF076 /* GameRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRepository.swift; sourceTree = "<group>"; };
+		A10C509129C019B300DBF076 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A163532629BF1B7900E137CA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A163532729BF1B7900E137CA /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		A1A86AF529BF04E300637362 /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A86AF829BF04E300637362 /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
 		A1A86AF929BF04E300637362 /* Home.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Home.docc; sourceTree = "<group>"; };
+		A1B2FFD329C02399009C66A0 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +65,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F298745688C6FE723A5CD3F4 /* Pods_Home.framework in Frameworks */,
+				A10C509229C019B300DBF076 /* Common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +75,7 @@
 		005E08F072B2CFAE6BACF72C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A10C509129C019B300DBF076 /* Common.framework */,
 				A10C505129BF6FF800DBF076 /* Alamofire.framework */,
 				A10C505229BF6FF800DBF076 /* Cosmos.framework */,
 				A10C505329BF6FF800DBF076 /* Reusable.framework */,
@@ -68,8 +97,33 @@
 		A10C504C29BF6C6E00DBF076 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				A10C506A29C008C500DBF076 /* HomePresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A10C506429C0009500DBF076 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A10C506529C000A200DBF076 /* Game.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A10C506C29C00C2A00DBF076 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				A10C506E29C00C5300DBF076 /* HomeInteractor.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		A10C507029C00D2700DBF076 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A10C507129C00D4C00DBF076 /* GameRepository.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		A163532529BF1B5A00E137CA /* View */ = {
@@ -86,6 +140,7 @@
 		A1A86AEB29BF04E300637362 = {
 			isa = PBXGroup;
 			children = (
+				A1B2FFD329C02399009C66A0 /* Media.xcassets */,
 				A1A86AF729BF04E300637362 /* Home */,
 				A1A86AF629BF04E300637362 /* Products */,
 				385CB8046923ED892579509C /* Pods */,
@@ -104,6 +159,9 @@
 		A1A86AF729BF04E300637362 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A10C507029C00D2700DBF076 /* Data */,
+				A10C506C29C00C2A00DBF076 /* UseCase */,
+				A10C506429C0009500DBF076 /* Model */,
 				A10C504C29BF6C6E00DBF076 /* Presenter */,
 				A163532529BF1B5A00E137CA /* View */,
 				A1A86AF829BF04E300637362 /* Home.h */,
@@ -135,6 +193,7 @@
 				A1A86AF129BF04E300637362 /* Sources */,
 				A1A86AF229BF04E300637362 /* Frameworks */,
 				A1A86AF329BF04E300637362 /* Resources */,
+				A10C509429C019B300DBF076 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A163532929BF1B7900E137CA /* HomeViewController.xib in Resources */,
+				A1B2FFD429C02399009C66A0 /* Media.xcassets in Resources */,
 				A10C505029BF6C9C00DBF076 /* GamesTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +282,10 @@
 				A1A86AFA29BF04E300637362 /* Home.docc in Sources */,
 				A10C504F29BF6C9C00DBF076 /* GamesTableViewCell.swift in Sources */,
 				A163532829BF1B7900E137CA /* HomeViewController.swift in Sources */,
+				A10C506F29C00C5300DBF076 /* HomeInteractor.swift in Sources */,
+				A10C506B29C008C500DBF076 /* HomePresenter.swift in Sources */,
+				A10C507229C00D4C00DBF076 /* GameRepository.swift in Sources */,
+				A10C506629C000A200DBF076 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

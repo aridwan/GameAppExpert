@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "E2F3D7A3-F037-4CBA-9E34-E46B815DDF21"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CF5646C9-C5E0-4C6C-B93F-C94E9166B6BD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Modules/Home/Home/Data/GameRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "getGames()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CF5646C9-C5E0-4C6C-B93F-C94E9166B6BD - 850c355b9a0c4fcb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Home.ListGame, Alamofire.AFError&gt;) -&gt; () in closure #1 (RxSwift.AnyObserver&lt;Swift.Array&lt;Home.Game&gt;&gt;) -&gt; RxSwift.Disposable in Home.GameRepository.getGames() -&gt; RxSwift.Observable&lt;Swift.Array&lt;Home.Game&gt;&gt;"
+                  moduleName = "Home"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aridwan/Desktop/GameApp/Modules/Home/Home/Data/GameRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "1081">
+               </Location>
+               <Location
+                  uuid = "CF5646C9-C5E0-4C6C-B93F-C94E9166B6BD - 850c355b9a0c4fa8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Home.ListGame, Alamofire.AFError&gt;) -&gt; () in closure #1 (RxSwift.AnyObserver&lt;Swift.Array&lt;Home.Game&gt;&gt;) -&gt; RxSwift.Disposable in Home.GameRepository.getGames() -&gt; RxSwift.Observable&lt;Swift.Array&lt;Home.Game&gt;&gt;"
+                  moduleName = "Home"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aridwan/Desktop/GameApp/Modules/Home/Home/Data/GameRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "910">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0E6CBD6F-9DF5-4F97-A498-BDE453FD70B5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Modules/Home/Home/Data/GameRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "getGames()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0E6CBD6F-9DF5-4F97-A498-BDE453FD70B5 - 850c355b9a0c4866"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Home.ListGame, Alamofire.AFError&gt;) -&gt; () in closure #1 (RxSwift.AnyObserver&lt;Swift.Array&lt;Home.Game&gt;&gt;) -&gt; RxSwift.Disposable in Home.GameRepository.getGames() -&gt; RxSwift.Observable&lt;Swift.Array&lt;Home.Game&gt;&gt;"
+                  moduleName = "Home"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aridwan/Desktop/GameApp/Modules/Home/Home/Data/GameRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "520">
+               </Location>
+               <Location
+                  uuid = "0E6CBD6F-9DF5-4F97-A498-BDE453FD70B5 - dd3ef1deaa76a4e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (RxSwift.AnyObserver&lt;Swift.Array&lt;Home.Game&gt;&gt;) -&gt; RxSwift.Disposable in Home.GameRepository.getGames() -&gt; RxSwift.Observable&lt;Swift.Array&lt;Home.Game&gt;&gt;"
+                  moduleName = "Home"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aridwan/Desktop/GameApp/Modules/Home/Home/Data/GameRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "358">
+               </Location>
+               <Location
+                  uuid = "0E6CBD6F-9DF5-4F97-A498-BDE453FD70B5 - 850c355b9a0c4847"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Home.ListGame, Alamofire.AFError&gt;) -&gt; () in closure #1 (RxSwift.AnyObserver&lt;Swift.Array&lt;Home.Game&gt;&gt;) -&gt; RxSwift.Disposable in Home.GameRepository.getGames() -&gt; RxSwift.Observable&lt;Swift.Array&lt;Home.Game&gt;&gt;"
+                  moduleName = "Home"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aridwan/Desktop/GameApp/Modules/Home/Home/Data/GameRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "197">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2CD05262-4286-4776-95CF-ABB6224E305B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Modules/Home/Home/View/GamesTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "setPlatformIcon(platforms:view:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2CD05262-4286-4776-95CF-ABB6224E305B - 8b68dd2fa62ef045"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Home.GamesTableViewCell.setPlatformIcon(platforms: Swift.Array&lt;Home.ParentPlatform&gt;, view: __C.UIView) -&gt; ()"
+                  moduleName = "Home"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aridwan/Desktop/GameApp/Modules/Home/Home/View/GamesTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "526">
+               </Location>
+               <Location
+                  uuid = "2CD05262-4286-4776-95CF-ABB6224E305B - 8b68dd2fa62ef045"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Home.GamesTableViewCell.setPlatformIcon(platforms: Swift.Array&lt;Home.ParentPlatform&gt;, view: __C.UIView) -&gt; ()"
+                  moduleName = "Home"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aridwan/Desktop/GameApp/Modules/Home/Home/View/GamesTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "618">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
